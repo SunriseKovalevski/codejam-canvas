@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CodeJam-Canvas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a class="btn header__hamburger_menu" href="">
+        <img class="img" src="img/header-hamburger-menu.svg" alt="" />
+      </a>
+      <h1 class="header__title">CodeJam - Pallete</h1>
+      <a class="btn header__menu_points" href="">
+        <img class="img" src="img/header-vertical-points.svg" alt="" />
+      </a>
+    </header>
+
+    <main class="main">
+      <aside class="left_box">
+        <section class="tools">
+          <h2 hidden>tools</h2>
+          <ul class="tools__list">
+            <li>
+              <a class="btn" href="">
+                <img src="img/tool-bucket.svg" alt="" />
+                <p>Paint bucket</p>
+              </a>
+            </li>
+            <li>
+              <a class="btn" href="">
+                <img src="img/tool-pipet.svg" alt="" />
+                <p>Choose color</p>
+              </a>
+            </li>
+            <li>
+              <a class="btn" href="">
+                <img src="img/tool-arrows-lrtb.svg" alt="" />
+                <p>Move</p>
+              </a>
+            </li>
+            <li>
+              <a class="btn" href="">
+                <img src="img/tool-arrows-lr.svg" alt="" />
+                <p>Transform</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="palette">
+          <h2 hidden>palette</h2>
+          <ul class="palette__list">
+            <li>
+              <a class="btn" href="">
+                <div class="color_circle color_current">color_circle</div>
+                <p>Current color</p>
+              </a>
+            </li>
+            <li>
+              <a class="btn" href="">
+                <div class="color_circle color_prev">color_circle</div>
+                <p>Prev color</p>
+              </a>
+            </li>
+            <li>
+              <a class="btn" href="">
+                <div class="color_circle color_red">color_circle</div>
+                <p>red</p>
+              </a>
+            </li>
+            <li>
+              <a class="btn" href="">
+                <div class="color_circle color_blue">color_circle</div>
+                <p>blue</p>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </aside>
+
+      <section class="canvas_box">
+        <h2 hidden>canvas 512x512</h2>
+        <canvas class="canvas" id="canvas">
+          Please update your browser, the Canvas item is not supported
+        </canvas>
+      </section>
+      <section class="file_options">
+        <h2 hidden>file_options</h2>
+        <ul class="file_options__list" id="file_options__list">
+          <li>
+            <button class="btn" value="4x4.json">
+              4x4.json
+            </button>
+          </li>
+          <li>
+            <button class="btn" value="32x32.json">
+              32x32.json
+            </button>
+          </li>
+          <li>
+            <button class="btn" value="image.png">
+              image.png
+            </button>
+          </li>
+        </ul>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
